@@ -54,7 +54,7 @@ class BonBanhCrawler:
                 detail_url = f"https://bonbanh.com/{item_detail_url}"
                 data[idx].append(detail_url)
                 data[idx].append(str(item))
-                sleep(1, 3)
+                sleep(1, 2)
                 data[idx].append(self.get_detail_data(detail_url))
                 print(f"Successfully extracted item {idx+1}: {detail_url}")
             except Exception as e:
@@ -98,8 +98,8 @@ class BonBanhCrawler:
         if self.num_page < 1:
             return []
         data = self.get_data(self.origin_url)
-        sleep()
+        sleep(2, 4)
         for i in range(2, self.num_page + 1):
             data += self.get_data(self.origin_url + f"/page,{i}")
-            sleep()
+            sleep(2, 4)
         return data
