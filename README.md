@@ -1,4 +1,4 @@
-# ML-project
+# Machine Learning Project: Car Price Prediction
 
 #### Require:
 - Python - 3.12.3
