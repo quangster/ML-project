@@ -10,3 +10,4 @@ seaborn==0.13.2
 openpyxl==3.1.2
 statsmodels==0.14.2
 graphviz==0.20.3
+xgboost==2.0.3
